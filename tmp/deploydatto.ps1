@@ -5,7 +5,7 @@ New-Item -Path $drive -Name $appName  -ItemType Directory -ErrorAction SilentlyC
 $LocalPath = $drive + '\AppInstalls\' + $appName
 mkdir $LocalPath
 set-Location $LocalPath
-$URL = 'https://raw.githubusercontent.com/Kris-Turk/Datto/main/tmp/AgentSetup_The%2BMarketing%2BPractice.exe'
+$URL = 'https://merlot.centrastage.net/csm/profile/downloadAgent/412b8165-1827-4519-9db3-7c611bd1b028'
 $URLexe = 'DattoWindowsAgent.exe'
 $outputPath = $LocalPath + '\' + $URLexe
 Invoke-WebRequest -Uri $URL -OutFile $outputPath
